@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
   <head>
      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-     <title>{{ page.title }}</title>
+     <title>My First Post</title>
      <meta name="author" content="Ryan Rauh" />
      <link href="http://rauhryan.github.com" rel="alternate" title="Ryan Rauh - Nerdin' it up" type="application/atom+xml" />
 
@@ -41,7 +41,30 @@
       </div>
     </div>
     <div id='main' class='container'>
-		{{ content }}
+		
+<div class="post" id='post'>
+  <h1><a href=''>My First Post</a></h1>
+  <p class='meta'>
+    2001-07-16
+    
+  </p>
+  <p>Well I love github! It has made my development experience dramatically better. So I decided to give blogging with github pages a try. We shall see how it goes :)</p>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /**
+    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+    */
+  (function() {
+   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+   dsq.src = 'http://ryanrauhblog.disqus.com/embed.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=ryanrauhblog">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
     </div>
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

@@ -28,7 +28,8 @@ ul{ overflow:hidden; list-style-type: none; display:block; }
 .hdr-main{
 	padding-bottom:10px;
 	text-indent:10px;
-	border-radius: 9px; -moz-border-radius:9px 9px 0 0; -webkit-border-radius: 9px; 
+	
+	height:125px;
 	}
 
 .notop { margin-top:0px; }

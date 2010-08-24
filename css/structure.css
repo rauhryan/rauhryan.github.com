@@ -31,6 +31,9 @@ ul{ overflow:hidden; list-style-type: none; display:block; }
 	
 	height:125px;
 	}
+.hdr-text {
+	font-size:4.4em;
+}
 
 .notop { margin-top:0px; }
 .nobottom { margin-bottom: 0px; }
@@ -38,89 +41,106 @@ ul{ overflow:hidden; list-style-type: none; display:block; }
 .form-select-inline.vtop, .button.vtop { vertical-align: top; margin-top: 27px; }
 	
 /* **************** CONTENT OBJECTS***************** */
-/* *********  taken from OOCSS content.css  ********** */
-/* ====== Default spacing ====== */
-h1, h2, h3, h4, h5, h6, ul, ol,dl, p,blockquote {padding:5px;}
-h1, h2, h3, h4, h5, h6 {padding-bottom:0px; line-height: 1.2em;}
-img{padding-bottom:0px;}
-pre{margin: 10px;}
-table h1,table h2,table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl{padding:0;}
-/* ====== Elements ====== */
-img{display:block;}
-em{font-style: italic;}
-strong{font-weight:bold;}
-/*hr{border: 3px solid #e2e2e2; border-width: 0 0 5px 0; /*margin: 20px 10px 10px 10px;}*/
-code{color:#000; font-size: 1.1em}
-/* ====== Headings ====== */
-/* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
-
-h1, .h1{font-size:400%;  font-weight:600; font-style: normal; line-height:100%}
-h2, .h2{font-size:170%; font-weight:600; font-style: normal; line-height:100%}
-h3, .h3{font-size:150%; font-weight:600; font-style: normal; line-height:100%}
-h4, .h4{font-size:125%; font-weight:600; font-style: normal; line-height:100%}
-h5, .h5{font-size:115%; font-weight:600; font-style: normal; line-height:100%}
-h6, .h6{font-size:105%; font-weight:600;  font-style: normal; line-height:100%}
-/* if additional headings are needed they should be created via additional classes, never via location dependant styling */
-.category{font-size:108%; font-weight:normal; font-style: normal; text-transform:uppercase; color: #333;}
-.category a{color: #333;}
-.important a{font-weight:bold;}
-/* ====== Lists ======*/
-/* numbered list */ 
-ol.list-simple li{list-style-type: decimal; margin-left:40px;}
-/* standard list */
-ul.list-simple li{list-style-type:disc; margin-left:40px;}
-/* ====== Tables ====== */
-.data{padding: 20px; position:relative; zoom:1;vertical-align: top;border-right:solid 1px transparent;/* border fixes a FF2 bug which causes the data table to overlay its borders*/}
-.data table {width:100%;border:1px solid #d6d6d6;}
-th, td{vertical-align:top;border:1px solid #d6d6d6;}
-.txt-c, .data .txt-c td, .data .txt-c th{text-align:center;}
-.txt-l, .data .txt-l td, .data .txtL-l th{text-align:left;}
-.txt-r, .data .txt-r td, .data .txt-r th{text-align:right;}
-.txt-t, .data .txt-t td, .data .txt-t th{vertical-align:top;}
-.txt-b, .data .txt-b td, .data .txt-b th{vertical-align:bottom;}
-.txt-m, .data .txt-m td, .data .txt-m th{vertical-align:middle;}
-.txt-sub{font-size:85%;}
-.data th,.data td{padding:3px 20px}
-.data thead tr{background-color: #fff0f8;}
-.data th{color: #000; font-weight:bold}
-/* specification table - extends data table */
-.spec{padding:10px;}
-.spec table{border-top: 1px solid #e2e2e2; border-bottom-color:#fff; border-left:none; border-right:none;}
-.spec th, .spec td{border:1px solid #e2e2e2; border-width: 1px 0; padding-left:0;}
-.spec .odd, .spec .even{background-color: #fff;}
-/* ====== blockquote ====== */
-cite{display:block; text-align:right; padding-top: 10px;}
-/* ====== callout ====== */
-.callout{font-size:189%;color:#999999; font-style:italic;}
-.callout cite{display:block; text-align:right;padding-top: 30px; font-size:69.25%;}
-.callout span.quot{font-size: 500%; vertical-align: sub; color:#e2e2e2; line-height:25px; font-weight:bold;}
-.callout span.quotLast{vertical-align:middle;}
-/* ====== image treatments (get more from jason santa maria) ====== */
-.caption{font-size:13px; color:#666666; font-style:italic;padding-top:0;}
-/* will need to either 
-1. find a way to capture the width of the caption in the width of the image or flash
-2. Set some default widths, mby use flickr widths?
-*/
-/* ====== media ====== */
-.media{overflow:hidden; overflow:visible; zoom:1;margin:10px;}
-.media .img{float:left;margin-right: 10px;}
-.media .img img{display:block;}
-.media .imgExt{float:right; margin-left: 10px;}
-/* ====== special formatting classes ====== */
-/*.detail{color: #777; font-size:11px;display:block;}*/
-
-.list-basic.list-buttons .button, .list-basic.list-buttons .button span {display:block;}
-
-/* Forms */
-
-.description { text-indent: 1em; font-family: Consolas, Monospace; border-top:1px solid #AAAAAA; padding-top: 8px;}
-.comment-line {border-top:1px solid #AAAAAA;
-margin-top:5px;
-padding-left:10px;
-padding-top:5px;
-font-family: Consolas, Monospace; font-size: .75em; }
-
-.gravatar {float: left; }
-.comment  {float: left; margin-left: 8px; }
-.comment h3 { margin-bottom: 10px; }
-.comment p { font-family: Consolas, Monospace;}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #111111;
+}
+h1 {
+  font-size: 2.5em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.75em;
+}
+h3 {
+  font-size: 1.4em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: 1.3em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+h5 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+h6 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+h1 img { margin: 0; }
+h2 img { margin: 0; }
+h3 img { margin: 0; }
+h4 img { margin: 0; }
+h5 img { margin: 0; }
+h6 img { margin: 0; }
+p { margin: 0 0 1.5em; }
+p img.left {
+  float: left;
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0;
+}
+p img.right {
+  float: right;
+  margin: 1.5em 0 1.5em 1.5em;
+}
+a:focus { color: #000000; }
+a:hover { color: #000000; }
+a {
+  color: #000099;
+  text-decoration: underline;
+}
+blockquote {
+  margin: 1.5em;
+  color: #666666;
+  font-style: italic;
+}
+strong { font-weight: bold; }
+em, dfn { font-style: italic; }
+dfn { font-weight: bold; }
+sup, sub { line-height: 0; }
+abbr, acronym { border-bottom: 1px dotted #666666; }
+address {
+  margin: 0 0 1.5em;
+  font-style: italic;
+}
+del { color: #666666; }
+pre {
+  margin: 1.5em 0;
+  white-space: pre;
+}
+pre, code, tt {
+  font: 1em 'andale mono', 'lucida console', monospace;
+  line-height: 1.5;
+}
+li ul { margin: 0; }
+li ol { margin: 0; }
+ul, ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 3.333em;
+}
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
+dl { margin: 0 0 1.5em 0; }
+dl dt { font-weight: bold; }
+dd { margin-left: 1.5em; }
+table {
+  margin-bottom: 1.4em;
+  width: 100%;
+}
+th { font-weight: bold; }
+thead th { background: #c3d9ff; }
+th, td, caption { padding: 4px 10px 4px 5px; }
+tr.even td { background: #e5ecf9; }
+tfoot { font-style: italic; }
+caption { background: #eeeeee; }
+.small {
+  font-size: 0.8em;
+  margin-bottom: 1.875em;
+  line-height: 1.875em;
+}

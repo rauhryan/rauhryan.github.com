@@ -13,9 +13,11 @@
      <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
 
      <!-- Homepage CSS -->
-	 <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
-	 <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
-     <link rel="stylesheet" href="/css/structure.css" type="text/css" media="screen, projection" />
+	 <link rel="stylesheet" href="/css/core/libraries.css" type="text/css" media="screen, projection" />
+	 <link rel="stylesheet" href="/css/core/content.css" type="text/css" media="screen, projection" />
+     <link rel="stylesheet" href="/css/core/module/mod.css" type="text/css" media="screen, projection" />
+     <link rel="stylesheet" href="/css/core/template/template.css" type="text/css" media="screen, projection" />
+     <link rel="stylesheet" href="/css/core/grid/grids.css" type="text/css" media="screen, projection" />
      <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen, projection" />
 	 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
      
@@ -36,24 +38,30 @@
      </script>
   </head>
   <body>
-    <a href="http://github.com/rauhryan"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
+    <a href="http://github.com/rauhryan" class="forkme"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:1000;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
   
-  <div>
-  
-  <div class="hdr-main" >   
-	   <div class='mod-ext'>
-		  <div class='inner'>
-			<div class="bd">
-				 <a href="/"><h1 class="hdr-text lobster color0" >Nerdin' it uP!</h1></a>
-			 </div>
-		  </div>
+  <div class='liquid'>
+  	  <div class='head'>
+		  <div class="hdr-main" >   
+			   <div class='mod-ext'>
+				  <div class='inner'>
+					<div class="bd">
+						 <a href="/"><h1 class="hdr-text lobster color0" >Nerdin' it uP!</h1></a>
+					 </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class='body'>
+			<div class='rightCol'>
+			 <h1>Side bar</h1>
+			</div>
+		
+			<div class='main'>
+				{{ content }}
+			</div>
 		</div>
 	</div>
-	</div>
-	
-    <div id='main' class='container_16'>
-		{{ content }}
-    </div>
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

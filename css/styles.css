@@ -1,5 +1,5 @@
 ﻿.lobster { font-family: 'Lobster';}
-
+.forkme {}
 
 .color0 { color: #FFF; }
 .color1{color:#222222;} /* Used for Headers */
@@ -13,8 +13,8 @@
 .bg-color3, .odd:hover, .even:hover{background-color:#D4E7F5} /* secondary venue bg color and deals ftr */
 .bg-color4 {background-color: #fefefe;}
 
-.hdr-main { background: url('/images/headerbar.jpg') repeat-x top left; border-radius:9px 9px 0 0; -moz-border-radius:9px 9px 0 0; -webkit-border-radius:9px 9px 0 0; margin-bottom:70px;}
-.hdr-text { margin:68px; }
+.hdr-main { background: url('/images/headerbar.jpg') repeat-x top left; border-radius:9px 9px 0 0; -moz-border-radius:9px 9px 0 0; -webkit-border-radius:9px 9px 0 0; padding:7px;}
+.hdr-text { font-size:10.4em; }
 
 ul.comments li { border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; margin-top: 3px; margin-bottom: 3px;}
 

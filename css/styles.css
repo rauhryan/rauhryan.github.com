@@ -99,3 +99,5 @@ input[type=]
 .post { margin-bottom: 4em; }
 .post:last-child { margin-bottom: 0; }
 .post .meta { text-align: right; color: #666; }
+.head .mod-ext{width:960px;margin:0 auto;}
+.body {width:960px;margin:0 auto;}

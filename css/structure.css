@@ -144,3 +144,5 @@ caption { background: #eeeeee; }
   margin-bottom: 1.875em;
   line-height: 1.875em;
 }
+.head .mod-ext{width:960px;margin:0 auto;}
+.body {width:960px;margin:0 auto;}

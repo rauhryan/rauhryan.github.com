@@ -3,9 +3,9 @@ layout: default
 title: Ryan Rauh
 ---
 
-
+<ul class="posts">
 {% for post in paginator.posts %}
-  <div class="post">
+  <li class="post">
     <h1><a href='{{ post.url }}'>{{ post.title }}</a></h1>
     <p class='meta'>
       {{ post.date | date: '%Y-%m-%d' }}
@@ -14,9 +14,9 @@ title: Ryan Rauh
       {% endunless %}
     </p>
     {{ post.content }}
-  </div>
+  </li>
 {% endfor %}
-
+</ul>
 <p class='pagination'>
   {% if paginator.previous_page || paginator.next_page %}
   But wait, there's more!

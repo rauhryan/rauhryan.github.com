@@ -101,3 +101,20 @@ input[type=]
 .post .meta { text-align: right; color: #666; }
 .head .mod-ext{width:960px;margin:0 auto;}
 .body {width:960px;margin:0 auto;}
+
+.post {
+    padding: 4px;
+    
+
+     -moz-border-radius: 4px; 
+  -webkit-border-radius: 4px; 
+          border-radius: 4px; 
+          
+          
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+
+
+     -moz-box-shadow: 2px 0px 8px #333; 
+  -webkit-box-shadow: 2px 0px 8px #333; 
+          box-shadow: 2px 0px 8px #333; 
+}

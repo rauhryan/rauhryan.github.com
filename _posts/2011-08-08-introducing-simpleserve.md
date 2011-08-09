@@ -1,3 +1,10 @@
+---
+layout: post
+title: Introducing Simpleserve
+categories: [ruby]
+
+---
+
 Simpleserve
 ===========
 

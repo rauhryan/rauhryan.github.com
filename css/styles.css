@@ -118,3 +118,5 @@ input[type=]
   -webkit-box-shadow: 2px 0px 8px #333; 
           box-shadow: 2px 0px 8px #333; 
 }
+
+.post h1:first-child {border-bottom: solid 1px; padding-bottom: 10px;}
